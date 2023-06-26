@@ -1,6 +1,7 @@
 body {
   font-family: "Pathway Extreme", sans-serif;
   scroll-behavior: smooth;
+  overflow-x: scroll;
   background-image: url(https://img.freepik.com/free-photo/golden-monstera-leaves-background-design-resource_53876-143097.jpg?w=1060&t=st=1687776114~exp=1687776714~hmac=21b479aafa51a25a3808e09c0889a1f26c13ac42c302710884a9a465906ee4eb);
 }
 .container {
