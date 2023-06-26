@@ -61,21 +61,30 @@
       <div class="sitebar-text offcanvas-body">
         <div class="sitebar mb-3"><a href="/index.html">Main</a></div>
         <div class="sitebar mb-3">
-          <a href="/lingerie/index.html">Colection 2023</a>
+          <a href="./lingerie/index.html">Collection 2023</a>
         </div>
 
         <div class="sitebar mb-3">
-          <a href="/wishList/index.html">Wish List</a>
+          <a href="./wishList/index.html">Wish List</a>
         </div>
       </div>
       <!-- filter -->
-      <div class="filter col-md-6">
+      <div class="filter col-md-6 mx-3">
         <h5>Sorting</h5>
-        <br />
-        <select id="sort" name="sort" class="form-control">
-          <option value="rating_desc">Lingerie</option>
-          <option value="price_asc">Swimwear</option>
-        </select>
+        <form class="radio-form">
+          <input
+            checked=""
+            value="lingerie"
+            name="hopping"
+            type="radio"
+            id="lingerie" />
+          <label for="lingerie"><span></span>Lingerie</label>
+          <input value="swimwear" name="hopping" type="radio" id="swimwear" />
+          <label for="swimwear"><span></span>Swimwear</label>
+          <div class="worm">
+            <div class="worm__segment"></div>
+          </div>
+        </form>
       </div>
       <!-- filter end -->
     </div>
