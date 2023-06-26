@@ -1,0 +1,355 @@
+body {
+  font-family: "Pathway Extreme", sans-serif;
+  scroll-behavior: smooth;
+  /* background-color: rgb(40, 40, 40); */
+  background-image: url(https://img.freepik.com/free-photo/golden-monstera-leaves-background-design-resource_53876-143097.jpg?w=1060&t=st=1687776114~exp=1687776714~hmac=21b479aafa51a25a3808e09c0889a1f26c13ac42c302710884a9a465906ee4eb);
+}
+.container {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  margin-top: 4em;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  /* justify-content: space-evenly; */
+  /* gap: 5rem; */
+  /* overflow-x: auto; */
+}
+/* .img {
+  flex: 0 0 auto;
+  margin: 0 100px;
+}
+img {
+  width: 100%;
+  height: 32rem;
+} */
+
+.sitebar a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+.filter {
+  margin-bottom: 20%;
+}
+
+.radio-form {
+  display: block;
+  margin: auto;
+  max-width: 10em;
+  position: relative;
+}
+
+.radio-form input {
+  position: fixed;
+  top: -1.5em;
+  left: -1.5em;
+}
+
+.radio-form label {
+  cursor: pointer;
+  display: block;
+  font-weight: bold;
+  text-shadow: 0 0.1em 0.1em rgba(0, 0, 0, 0.2);
+  transition: color 0.2s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+}
+
+.radio-form label:not(:last-of-type) {
+  margin-bottom: 1.5em;
+}
+
+.radio-form label span {
+  box-shadow: 0 0 0 0.2em currentColor inset, 0 0.2em 0.2em rgba(0, 0, 0, 0.2),
+    0 0.3em 0.2em rgba(0, 0, 0, 0.2) inset;
+  display: inline-block;
+  margin-right: 0.5em;
+  vertical-align: bottom;
+  border-radius: 50%;
+  width: 1.5em;
+  height: 1.5em;
+  transition: transform 0.2s cubic-bezier(0.5, 0, 0.5, 2),
+    box-shadow 0.2s cubic-bezier(0.45, 0.05, 0.55, 0.95),
+    color 0.2s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+}
+
+.radio-form input:checked + label,
+.radio-form input:checked + label span {
+  color: #ff2424;
+}
+
+.radio-form input:checked + label,
+.radio-form input:checked + label span {
+  transition-delay: 0.4s;
+}
+
+.radio-form label span {
+  transform: scale(1.2);
+}
+
+.radio-form .worm {
+  top: 0.375em;
+  left: 0.375em;
+  position: absolute;
+}
+
+.radio-form .worm__segment {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0.75em;
+  height: 0.75em;
+  border-radius: 50%;
+  transition: transform 0.4s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+}
+
+.radio-form .worm__segment:before {
+  animation-duration: 0.4s;
+  animation-timing-function: cubic-bezier(0.45, 0.05, 0.55, 0.95);
+  background: currentColor;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.radio-form .worm__segment:first-child:before,
+.radio-form .worm__segment:last-child:before {
+  box-shadow: 0 0 1em 0 currentColor;
+}
+
+@keyframes hop1 {
+  from,
+  to {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(-1.5em);
+  }
+}
+
+@keyframes hop2 {
+  from,
+  to {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(-1.5em);
+  }
+}
+
+@keyframes hop3 {
+  from,
+  to {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(-1.5em);
+  }
+}
+
+.radio-form input:nth-of-type(1):checked ~ .worm .worm__segment {
+  transform: translateY(0);
+}
+
+.radio-form input:nth-of-type(1):checked ~ .worm .worm__segment:before {
+  animation-name: hop1;
+}
+
+.radio-form input:nth-of-type(2):checked ~ .worm .worm__segment {
+  transform: translateY(3em);
+}
+
+.radio-form input:nth-of-type(2):checked ~ .worm .worm__segment:before {
+  animation-name: hop2;
+}
+
+.radio-form input:nth-of-type(3):checked ~ .worm .worm__segment {
+  transform: translateY(6em);
+}
+
+.radio-form input:nth-of-type(3):checked ~ .worm .worm__segment:before {
+  animation-name: hop3;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  body {
+    background: #17181c;
+    color: #e3e4e8;
+  }
+
+  .radio-form input:checked + label,
+  .radio-form input:checked + label span,
+  .radio-form .worm__segment:before {
+    color: #ff2424;
+  }
+}
+
+.card {
+  position: relative;
+  width: 25em;
+  height: 30em;
+  box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 120ms;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: white;
+  padding: 0.5em;
+  padding-bottom: 3.4em;
+  margin: 20px 100px;
+  flex: 0 0 auto;
+}
+
+/* .card::after {
+  content: "Add to Wishlist♡";
+  vertical-align: middle;
+  padding-top: 1.25em;
+  padding-left: 1.25em;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background: #940f00;
+  color: #fff;
+  height: 2.5em;
+  width: 100%;
+  transition: all 80ms;
+  font-weight: 600;
+  text-transform: uppercase;
+  opacity: 0;
+} */
+
+.card .title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9em;
+  position: absolute;
+  left: 0.625em;
+  bottom: 1.875em;
+  font-weight: 400;
+  color: #000;
+}
+
+.card .price {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 0.9em;
+  position: absolute;
+  left: 0.625em;
+  bottom: 0.625em;
+  color: #000;
+}
+
+.card:hover::after {
+  bottom: 0;
+  opacity: 1;
+}
+
+.card:active {
+  transform: scale(0.98);
+}
+
+/* .card:active::after {
+  content: "Added !";
+  height: 3.125em;
+} */
+
+.text {
+  max-width: 55px;
+}
+
+.image {
+  background: rgb(241, 241, 241);
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+.image img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.container::-webkit-scrollbar {
+  visibility: hidden;
+}
+
+/* pagination */
+.btn-pagination {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 0.5em 2em 0.5em 2.5em;
+  font-size: 1em;
+  font-weight: bold;
+  border-radius: 15px;
+  color: #fff6fb;
+  letter-spacing: 0.3em;
+  text-shadow: -2px 2px 5px #d21616;
+  background-color: transparent;
+  border: 2px solid #bb1313;
+  box-shadow: 0 0 0px 1px #ab0c07, 0 0 10px 2px #e02020,
+    inset 0 0 0px 1px #ab0c07, inset 0 0 10px 2px #e02020;
+  transition: 100ms;
+}
+
+.btn-pagination:hover {
+  box-shadow: 0 0 0px 1px #ab0c07, 0 0 10px 2px #e02020,
+    inset 0 0 0px 1px #ab0c07, inset 0 0 30px 2px #e02020;
+  text-shadow: 0 0 10px #a90707;
+  /* transform: translateY(-5px); */
+}
+
+.btn-pagination:active {
+  box-shadow: 0 0 0px 1px #a90707, 0 0 25px 2px #e02020,
+    inset 0 0 0px 1px #a90707, inset 0 0 30px 2px #e02020;
+  /* transform: translateY(1px); */
+}
+
+.btn-pagination a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* btn heart */
+.btn-icon {
+  border-radius: 10px;
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.btn-icon:hover > .icon {
+  transform: scale(1.2);
+  cursor: pointer;
+  transition: 0.2s linear;
+}
+
+.active {
+  fill: #fd1853;
+  animation: grosseur 0.2s linear;
+}
+
+@keyframes grosseur {
+  0% {
+    width: 50px;
+    height: 50px;
+    fill: #fd1853;
+  }
+
+  100% {
+    width: 30px;
+    height: 30px;
+    fill: #fd1853;
+  }
+}
