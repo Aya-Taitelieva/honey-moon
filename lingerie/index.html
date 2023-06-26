@@ -103,7 +103,7 @@
       class="d-none flex-column w-100 align-items-center mt-5"
       id="add-form"
     >
-      <h2>Admin panel</h2>
+      <h2 class="mt-5">Admin panel</h2>
       <input
         id="title"
         placeholder="title"
@@ -144,6 +144,68 @@
       <button class="btn-pagination"><a class="page">next</a></button>
     </div>
     <!-- pagination -->
+
+    <!-- edit panel -->
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Admin panel</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form
+              class="d-flex flex-column w-100 align-items-center"
+              id="edit-form"
+            >
+              <input
+                id="edit-title"
+                placeholder="title"
+                type="text"
+                class="inp form-control w-100 mb-2"
+              />
+              <input
+                id="edit-price"
+                placeholder="price"
+                type="text"
+                class="inp form-control w-100 mb-2"
+              />
+              <input
+                id="edit-image"
+                placeholder="image"
+                type="text"
+                class="inp form-control w-100 mb-2"
+              />
+              <div class="form-floating mb-2 w-100">
+                <select class="form-select" id="edit-category">
+                  <option value="lingerie" selected>Lingerie</option>
+                  <option value="swimwear">Swimwear</option>
+                </select>
+                <label for="category">category</label>
+              </div>
+              <button type="button" class="btn edit-btn btn-outline-dark">
+                Save changes
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- edit panel -->
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
