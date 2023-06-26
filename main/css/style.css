@@ -213,25 +213,13 @@ body {
   flex-wrap: wrap;
   justify-content: space-around;
   margin-top: 10%;
-  /* margin-bottom: 10%; */
+
   gap: 30px;
 }
 .lingerie img {
   width: 400px;
 }
-/* .text-lingerie h2 {
-  position: absolute;
-  top: 87%;
-  left: -1%;
-  text-transform: uppercase;
-  color: white;
-  width: 60px;
-  background: #a716163d;
-  padding: 10px;
-  text-align: center;
-  writing-mode: vertical-lr;
-  text-orientation: upright;
-} */
+
 .text-lingerie a {
   text-decoration: none;
   font-size: 30px;
@@ -241,19 +229,6 @@ body {
   width: 400px;
 }
 
-/* .text-swimwear h2 {
-  position: absolute;
-  top: 87%;
-  left: 50.5%;
-  text-transform: uppercase;
-  color: white;
-  width: 60px;
-  background: #a716163d;
-  padding: 10px;
-  text-align: center;
-  writing-mode: vertical-lr;
-  text-orientation: upright;
-} */
 .text-swimwear a {
   text-decoration: none;
   font-size: 30px;
@@ -288,9 +263,6 @@ body {
     top: 199%;
     left: 17%;
   }
-  /* .footer {
-    margin-top: 70%;
-  } */
 }
 @media screen and (max-width: 426px) {
   .title h1 {
@@ -317,7 +289,4 @@ body {
   .text-swimwear h2 {
     margin-left: 20px;
   }
-  /* .footer {
-    margin-top: 150%;
-  } */
 }

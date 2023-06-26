@@ -1,7 +1,6 @@
 body {
   font-family: "Pathway Extreme", sans-serif;
   scroll-behavior: smooth;
-  /* background-color: rgb(40, 40, 40); */
   background-image: url(https://img.freepik.com/free-photo/golden-monstera-leaves-background-design-resource_53876-143097.jpg?w=1060&t=st=1687776114~exp=1687776714~hmac=21b479aafa51a25a3808e09c0889a1f26c13ac42c302710884a9a465906ee4eb);
 }
 .container {
@@ -14,18 +13,7 @@ body {
   width: 100%;
   display: flex;
   flex-wrap: nowrap;
-  /* justify-content: space-evenly; */
-  /* gap: 5rem; */
-  /* overflow-x: auto; */
 }
-/* .img {
-  flex: 0 0 auto;
-  margin: 0 100px;
-}
-img {
-  width: 100%;
-  height: 32rem;
-} */
 
 .sitebar a {
   text-decoration: none;
@@ -209,24 +197,6 @@ img {
   flex: 0 0 auto;
 }
 
-/* .card::after {
-  content: "Add to Wishlist♡";
-  vertical-align: middle;
-  padding-top: 1.25em;
-  padding-left: 1.25em;
-  position: absolute;
-  left: 0;
-  bottom: -10px;
-  background: #940f00;
-  color: #fff;
-  height: 2.5em;
-  width: 100%;
-  transition: all 80ms;
-  font-weight: 600;
-  text-transform: uppercase;
-  opacity: 0;
-} */
-
 .card .title {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.9em;
@@ -254,11 +224,6 @@ img {
 .card:active {
   transform: scale(0.98);
 }
-
-/* .card:active::after {
-  content: "Added !";
-  height: 3.125em;
-} */
 
 .text {
   max-width: 55px;
