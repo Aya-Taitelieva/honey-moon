@@ -3,7 +3,7 @@
     {
       "id": 1,
       "title": "Mercy Corset in Black",
-      "price": 650,
+      "price": "650",
       "img": "https://cdn-yotpo-images-production.yotpo.com/instagram/78/17949564403413378/standard_resolution.jpg",
       "category": "lingerie"
     },
@@ -112,6 +112,27 @@
       "title": "Spring style swimwear - butterfly",
       "price": 1000,
       "img": "https://i.pinimg.com/564x/a5/83/e8/a583e83bc16fc590cd6aa1efb8da56b7.jpg",
+      "category": "swimwear"
+    },
+    {
+      "id": 12,
+      "title": "White swimwear - cherries",
+      "price": 1000,
+      "img": "https://i.pinimg.com/564x/01/c0/de/01c0de51e36de59f73388eb78d49e5c2.jpg",
+      "category": "swimwear"
+    },
+    {
+      "id": 11,
+      "title": "Black swimwear",
+      "price": 900,
+      "img": "https://i.pinimg.com/564x/f3/db/18/f3db18513cfbd599965f8a945a616c0a.jpg",
+      "category": "swimwear"
+    },
+    {
+      "id": 10,
+      "title": "White swimwear",
+      "price": 700,
+      "img": "https://i.pinimg.com/564x/72/fc/dc/72fcdc45e9bc300cfb85a4f66c9620d6.jpg",
       "category": "swimwear"
     }
   ]
