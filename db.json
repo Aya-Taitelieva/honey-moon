@@ -94,17 +94,24 @@
       "category": "lingerie"
     },
     {
-      "id": 8,
-      "title": "Spring style swimwear - butterfly",
-      "price": 1000,
-      "img": "https://i.pinimg.com/564x/a5/83/e8/a583e83bc16fc590cd6aa1efb8da56b7.jpg",
-      "category": "swimwear"
+      "id": 2,
+      "title": "Mercy Corset in Blush",
+      "price": 750,
+      "img": "https://cdn-yotpo-images-production.yotpo.com/instagram/56/18127852465171156/standard_resolution.jpg",
+      "category": "lingerie"
     },
     {
       "id": 7,
       "title": "Dakotta swimwear in Black",
       "price": 1200,
       "img": "https://cdn-yotpo-images-production.yotpo.com/instagram/70/17918294692882570/standard_resolution.jpg",
+      "category": "swimwear"
+    },
+    {
+      "id": 8,
+      "title": "Spring style swimwear - butterfly",
+      "price": 1000,
+      "img": "https://i.pinimg.com/564x/a5/83/e8/a583e83bc16fc590cd6aa1efb8da56b7.jpg",
       "category": "swimwear"
     }
   ]

@@ -12,10 +12,18 @@ let searchVal = "";
 
 //todo фильтрация по категории
 const filter = document.querySelectorAll("input[type='radio']");
-console.log(filter);
 let category = "";
 
+//todo admin-panel
+const btnPanel = document.querySelector(".show-panel");
+const addForm = document.querySelector("#add-form");
+const titleInp = document.querySelector("#title");
+const priceInp = document.querySelector("#price");
+const imageInp = document.querySelector("#image");
+const categoryInp = document.querySelector("#category");
+
 render();
+
 async function getProducts() {
   const res = await fetch(`${API}?q=${searchVal}&category_like=${category}`);
   const data = await res.json();
@@ -65,9 +73,9 @@ searchInp.addEventListener("input", () => {
   render();
 });
 
-//!чтобы добавить карточку в wishlist
+//todo добавить продукт в wishlist
 
-async function addProduct(newProduct) {
+async function addProductWish(newProduct) {
   await fetch(APIwish, {
     method: "POST",
     body: JSON.stringify(newProduct),
@@ -98,7 +106,7 @@ document.addEventListener("click", async (e) => {
       img: res.img,
       category: res.category,
     };
-    addProduct(wishProduct);
+    addProductWish(wishProduct);
   }
 });
 
@@ -109,4 +117,50 @@ filter.forEach((item) => {
     category = e.target.id;
     render();
   });
+});
+
+//todo show/hide admin panel
+
+btnPanel.addEventListener("click", () => {
+  addForm.classList.toggle("d-none");
+  addForm.classList.toggle("d-flex");
+});
+
+//todo добавить новый продукт
+async function addProduct(newProduct) {
+  await fetch(API, {
+    method: "POST",
+    body: JSON.stringify(newProduct),
+    headers: {
+      "Content-Type": "application/json",
+    },
+  });
+  render();
+}
+
+//todo обработчик события для добавления
+addForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  if (
+    !titleInp.value.trim() ||
+    !priceInp.value.trim() ||
+    !categoryInp.value.trim() ||
+    !imageInp.value.trim()
+  ) {
+    return;
+  }
+
+  const product = {
+    title: titleInp.value,
+    price: priceInp.value,
+    category: categoryInp.value,
+    img: imageInp.value,
+  };
+
+  addProduct(product);
+
+  titleInp.value = "";
+  priceInp.value = "";
+  categoryInp.value = "";
+  imageInp.value = "";
 });
