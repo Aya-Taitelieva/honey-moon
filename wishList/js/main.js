@@ -2,6 +2,7 @@
 
 const APIwish = "http://localhost:8000/wishlist";
 const cards = document.querySelector(".cards");
+const check = document.querySelector("#check-apple");
 
 //todo фильтрация по категории
 const filter = document.querySelectorAll("input[type='radio']");
@@ -75,4 +76,31 @@ filter.forEach((item) => {
 searchInp.addEventListener("input", () => {
   searchVal = searchInp.value;
   render();
+});
+
+const navbar = document.querySelector(".no-active");
+const btnMenu = document.querySelector(".btn-outline-dark");
+const footer = document.querySelector(".text-centers");
+//todo contrast
+let clicks = 0;
+check.addEventListener("click", (e) => {
+  clicks++;
+  if (clicks % 2 !== 0) {
+    document.body.style.background = "rgba(0, 0, 0, 0.689)";
+    document.body.style.color = "white";
+    navbar.classList.toggle("no-active");
+    navbar.classList.toggle("yes-active");
+    btnMenu.classList.toggle("btn-outline-light");
+    btnMenu.classList.toggle("btn-outline-dark");
+    footer.style.background = "black";
+  } else {
+    document.body.style.background =
+      "url(https://img.freepik.com/free-photo/gradient-peach-background-with-pink-shades_53876-105240.jpg?w=900&t=st=1687776700~exp=1687777300~hmac=1657fe5588c1a4af21882811a306af9e74e30c1a106eafab63241e7b7fe12c47)";
+    document.body.style.color = "black";
+    navbar.classList.toggle("no-active");
+    navbar.classList.toggle("yes-active");
+    btnMenu.classList.toggle("btn-outline-dark");
+    btnMenu.classList.toggle("btn-outline-light");
+    footer.style.background = "hsl(0, 28%, 87%)";
+  }
 });
