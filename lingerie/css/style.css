@@ -4,6 +4,9 @@ body {
   overflow-x: scroll;
   background-image: url(https://img.freepik.com/free-photo/golden-monstera-leaves-background-design-resource_53876-143097.jpg?w=1060&t=st=1687776114~exp=1687776714~hmac=21b479aafa51a25a3808e09c0889a1f26c13ac42c302710884a9a465906ee4eb);
 }
+::-webkit-scrollbar {
+  width: 0;
+}
 .container {
   margin: 0;
   padding: 0;
@@ -181,6 +184,9 @@ body {
   }
 }
 
+#add-form h2 {
+  color: #fff;
+}
 .card {
   position: relative;
   width: 25em;
@@ -251,7 +257,7 @@ body {
 /* pagination */
 .btn-pagination {
   position: fixed;
-  bottom: 20px;
+  top: 300px;
   right: 20px;
   padding: 0.5em 2em 0.5em 2.5em;
   font-size: 1em;
@@ -317,5 +323,31 @@ body {
     width: 30px;
     height: 30px;
     fill: #fd1853;
+  }
+}
+
+/* edit btn */
+
+.edit-button {
+  position: absolute;
+  top: 5px;
+  right: 4px;
+  z-index: 1;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.edit-button:hover .svg-edit-icon {
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
   }
 }
