@@ -29,6 +29,7 @@ const editPriceInp = document.querySelector("#edit-price");
 const editImageInp = document.querySelector("#edit-image");
 const editCategoryInp = document.querySelector("#edit-category");
 const editBtn = document.querySelector(".edit-btn");
+const deleteBtn = document.querySelector(".delete-btn");
 
 render();
 
@@ -223,4 +224,18 @@ editBtn.addEventListener("click", (e) => {
   editProduct(editId, newData);
   let modal = bootstrap.Modal.getInstance(exampleModal);
   modal.hide();
+});
+
+//todo обработчик событий для удаления карточек
+async function deleteProduct(id) {
+  //? запрос на удаление
+  await fetch(`${API}/${id}`, {
+    method: "DELETE",
+  });
+  //? стянуть и отобразить актуальные данные
+  render();
+}
+
+deleteBtn.addEventListener("click", (e) => {
+  deleteProduct(editId);
 });
