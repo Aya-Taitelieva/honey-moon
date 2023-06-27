@@ -5,84 +5,96 @@
       "title": "Mercy Corset in Black",
       "price": "650",
       "img": "https://cdn-yotpo-images-production.yotpo.com/instagram/78/17949564403413378/standard_resolution.jpg",
-      "category": "lingerie"
+      "category": "lingerie",
+      "description": "Perfect for springtime styling, Mercy's blush pink hues can be worn as underwear or outerwear looks."
     },
     {
       "id": 2,
       "title": "Mercy Corset in Blush",
       "price": 750,
       "img": "https://cdn-yotpo-images-production.yotpo.com/instagram/56/18127852465171156/standard_resolution.jpg",
-      "category": "lingerie"
+      "category": "lingerie",
+      "description": "Romances the lens in Lindie, our soft, sensual and delicately detailed lingerie range."
     },
     {
       "id": 3,
       "title": "Lindie Demi Cup Plunge",
       "price": 250,
       "img": "https://cdn-yotpo-images-production.yotpo.com/instagram/11/17850951401265711/standard_resolution.jpg",
-      "category": "lingerie"
+      "category": "lingerie",
+      "description": "Wind down in white sheets and our classic set, Lorna in blush pink: a match made in heaven."
     },
     {
       "id": 4,
       "title": "Underwired Bra in Ivory",
       "price": 400,
       "img": "https://cdn-yotpo-images-production.yotpo.com/instagram/64/17965407616613264/standard_resolution.jpg",
-      "category": "lingerie"
+      "category": "lingerie",
+      "description": "Lindie’s shimmering hand-beading is so pretty, she only needs red roses to complete the look."
     },
     {
       "id": 5,
       "title": "Lorna Full Brief in Black",
       "price": 500,
       "img": "https://cdn-yotpo-images-production.yotpo.com/instagram/66/18129177229252666/standard_resolution.jpg",
-      "category": "lingerie"
+      "category": "lingerie",
+      "description": "When they ask what you want for Valentine's, tell them it’s waiting in the AP store."
     },
     {
       "id": 6,
       "title": "Ozella Plunge Underwired",
       "price": 700,
       "img": "https://cdn-yotpo-images-production.yotpo.com/instagram/70/17921995720932170/standard_resolution.jpg",
-      "category": "lingerie"
+      "category": "lingerie",
+      "description": "🍇- One of the oldest symbols of fertility, abundance and vitality."
     },
     {
       "id": 7,
       "title": "Dakotta swimwear in Black",
       "price": 1200,
       "img": "https://cdn-yotpo-images-production.yotpo.com/instagram/70/17918294692882570/standard_resolution.jpg",
-      "category": "swimwear"
+      "category": "swimwear",
+      "description": "You need a bikini top that provides just as much shape and support as your favorite bra.  It’s perfect for larger busts."
     },
     {
       "id": 8,
       "title": "Spring style swimwear - butterfly",
       "price": 1000,
       "img": "https://i.pinimg.com/564x/a5/83/e8/a583e83bc16fc590cd6aa1efb8da56b7.jpg",
-      "category": "swimwear"
+      "category": "swimwear",
+      "description": "No frills—just a flawless, classic-cut style you'll never want to take off. Ribbed fabric and a tiny logo charm in back completes the look."
     },
     {
       "id": 9,
       "title": "Sunshine swimwear",
       "price": 800,
       "img": "https://i.pinimg.com/564x/da/dc/28/dadc28cf5bbbd55c5d2be0360aa6310b.jpg",
-      "category": "swimwear"
+      "category": "swimwear",
+      "description": "This is the ultimate, customizable swim look.  Featuring removable padding, optional straps, and a ruched cut that hugs every curve."
     },
     {
       "id": 10,
       "title": "White swimwear",
       "price": 700,
       "img": "https://i.pinimg.com/564x/72/fc/dc/72fcdc45e9bc300cfb85a4f66c9620d6.jpg",
-      "category": "swimwear"
+      "category": "swimwear",
+      "description": "Say hello to a tie-neck style that puts a flattering twist on the tried-and-true triangle. Complete with a wide band and adjustable straps to customize your fit."
     },
     {
       "id": 11,
       "title": "Black swimwear",
       "price": 900,
       "img": "https://i.pinimg.com/564x/f3/db/18/f3db18513cfbd599965f8a945a616c0a.jpg",
-      "category": "swimwear"
+      "category": "swimwear",
+      "description": "Slide on with any HM swim top and you're ready to go. High-cut legs and a skin-baring back bring out the best in your figure."
     },
     {
       "id": 12,
       "title": "White swimwear - cherries",
-      "price": 1000,
+      "price": "1000",
       "img": "https://i.pinimg.com/564x/01/c0/de/01c0de51e36de59f73388eb78d49e5c2.jpg",
-      "category": "swimwear"
+      "category": "swimwear",
+      "description": "Introducing your go-to string bikini. Our classic triangle comes with removable padding and adjustable tie straps to customize your fit."
     }
   ],
   "wishlist": [
@@ -108,18 +120,10 @@
       "category": "swimwear"
     },
     {
-
       "id": 3,
       "title": "Lindie Demi Cup Plunge",
       "price": 250,
-      "img": "https://cdn-yotpo-images-production.yotpo.com/instagram/11/17850951401265711/standard_resolution.jpg",
-      "category": "lingerie"
-
-      "id": 8,
-      "title": "Spring style swimwear - butterfly",
-      "price": 1000,
-      "img": "https://i.pinimg.com/564x/a5/83/e8/a583e83bc16fc590cd6aa1efb8da56b7.jpg",
-      "category": "swimwear"
+      "img": "https://cdn-yotpo-images-production.yotpo.com/instagram/11/17850951401265711/standard_resolution.jpg"
     },
     {
       "id": 12,
@@ -141,7 +145,13 @@
       "price": 700,
       "img": "https://i.pinimg.com/564x/72/fc/dc/72fcdc45e9bc300cfb85a4f66c9620d6.jpg",
       "category": "swimwear"
-
+    },
+    {
+      "id": 6,
+      "title": "Ozella Plunge Underwired",
+      "price": 700,
+      "img": "https://cdn-yotpo-images-production.yotpo.com/instagram/70/17921995720932170/standard_resolution.jpg",
+      "category": "lingerie"
     }
   ]
 }
