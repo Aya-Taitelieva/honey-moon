@@ -56,6 +56,10 @@ check.addEventListener("click", (e) => {
 
 const API = "http://localhost:8000/profiles";
 
+const signUp = document.querySelector(".signUp");
+const logIn = document.querySelector(".logIn");
+const nameUser = document.querySelector(".nameUser");
+
 const regEmail = document.querySelector(".registration-email");
 const regUser = document.querySelector(".registration-username");
 const regPass = document.querySelector(".registration-password");
@@ -88,15 +92,36 @@ signUpBtn.addEventListener("click", (e) => {
 
   addProfile(profile);
 
-  titleInp.value = "";
-  priceInp.value = "";
-  categoryInp.value = "";
-  imageInp.value = "";
-  descriptionInp.value = "";
+  regUser.value = "";
+  regEmail.value = "";
+  regPass.value = "";
+
+  signUp.classList.add("d-none");
+  logIn.classList.add("d-none");
+  nameUser.classList.add(".nameUser-active");
+  nameUser.innerText = profile.username;
 });
 
-//!
+//todo autorization
 
 const logUser = document.querySelector(".login-username");
 const logPass = document.querySelector(".login-password");
 const logBtn = document.querySelector(".login-btn");
+
+async function getProfiles() {
+  const res = await fetch(API);
+  const data = await res.json();
+  return data;
+}
+logBtn.addEventListener("click", async () => {
+  const res = await getProfiles();
+  const findElement = res.find((item) => {
+    if (item.username == logUser.value && item.password == logPass.value) {
+      return item;
+    }
+  });
+  signUp.classList.add("d-none");
+  logIn.classList.add("d-none");
+  nameUser.classList.add(".nameUser-active");
+  nameUser.innerText = findElement.username;
+});

@@ -16,7 +16,10 @@ body {
   background-repeat: no-repeat;
   border: none;
 }
-
+.nameUser-active {
+  width: 20%;
+  color: black;
+}
 .sitebar a {
   text-decoration: none;
   color: black;
