@@ -46,3 +46,52 @@ check.addEventListener("click", (e) => {
     textLingerie.style.color = "white";
   }
 });
+
+//todo registration
+
+const API = "http://localhost:8000/profiles";
+
+const regEmail = document.querySelector(".registration-email");
+const regUser = document.querySelector(".registration-username");
+const regPass = document.querySelector(".registration-password");
+const signUpBtn = document.querySelector(".signUp-btn");
+
+async function addProfile(newProfile) {
+  await fetch(API, {
+    method: "POST",
+    body: JSON.stringify(newProfile),
+    headers: {
+      "Content-Type": "application/json",
+    },
+  });
+}
+
+signUpBtn.addEventListener("click", (e) => {
+  if (
+    !regUser.value.trim() ||
+    !regPass.value.trim() ||
+    !regEmail.value.trim()
+  ) {
+    return;
+  }
+
+  const profile = {
+    username: regUser.value,
+    email: regEmail.value,
+    password: regPass.value,
+  };
+
+  addProfile(profile);
+
+  titleInp.value = "";
+  priceInp.value = "";
+  categoryInp.value = "";
+  imageInp.value = "";
+  descriptionInp.value = "";
+});
+
+//!
+
+const logUser = document.querySelector(".login-username");
+const logPass = document.querySelector(".login-password");
+const logBtn = document.querySelector(".login-btn");

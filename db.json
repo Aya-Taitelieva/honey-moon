@@ -109,7 +109,7 @@
       "id": 3,
       "title": "Lindie Demi Cup Plunge",
       "price": 250,
-      "img": "https://cdn-yotpo-images-production.yotpo.com/instagram/11/17850951401265711/standard_resolution.jpg"
+      "img": "https://cdn-yotpo-images-production.yotpo.com/instagram/11/17850951401265711/standard_resolution.jpg",
       "category": "lingerie"
     },
     {
@@ -140,5 +140,6 @@
       "img": "https://cdn-yotpo-images-production.yotpo.com/instagram/70/17921995720932170/standard_resolution.jpg",
       "category": "lingerie"
     }
-  ]
+  ],
+  "profiles": []
 }
