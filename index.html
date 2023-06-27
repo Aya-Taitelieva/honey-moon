@@ -19,7 +19,7 @@
   <body>
     <!-- ? navbar start -->
 
-    <nav class="navbar bg-body-tertiary">
+    <nav class="navbar no-active">
       <div class="container-fluid">
         <button
           class="btn btn-outline-dark px-4"
@@ -41,7 +41,7 @@
           <!-- Button trigger modal -->
           <button
             type="button"
-            class="btn btn-outline-dark px-1 mx-1"
+            class="registration btn btn-outline-dark px-1 mx-1"
             data-bs-toggle="modal"
             data-bs-target="#exampleModal">
             Registration
@@ -142,27 +142,30 @@
     </div>
 
     <!-- ? sitebar end -->
-
-    <div class="logo-bg">
-      <div class="logo"><img src="./main/image.svg/logo.svg" alt="" /></div>
-    </div>
-
-    <div class="first-wrapper">
-      <div class="title">
-        <h1>THE AP SUMMER OF LOVE</h1>
-        <span>Summer sale: Now Up-To 60% off</span>
+    <div class="wrapper">
+      <div class="logo-bg">
+        <div class="logo"><img src="./main/image.svg/logo.svg" alt="" /></div>
       </div>
-    </div>
-    <div class="second-wrapper">
-      <div class="lingerie">
-        <img src="./main/image.svg/photo_5235853803327178957_y.jpg" alt="" />
-        <div class="text-lingerie">
-          <a href="#">LINGERIE</a>
+
+      <div class="first-wrapper">
+        <div class="title">
+          <h1>THE AP SUMMER OF LOVE</h1>
+          <span>Summer sale: Now Up-To 60% off</span>
         </div>
       </div>
-      <div class="swimwear">
-        <img src="./main/image.svg/photo_5235853803327178956_x.jpg" alt="" />
-        <div class="text-swimwear"><a href="#">SWIMWEAR</a></div>
+      <div class="second-wrapper">
+        <div class="lingerie">
+          <img src="./main/image.svg/photo_5235853803327178957_y.jpg" alt="" />
+          <div class="text-lingerie">
+            <h2>LINGERIE</h2>
+          </div>
+        </div>
+        <div class="swimwear">
+          <img src="./main/image.svg/photo_5235853803327178956_x.jpg" alt="" />
+          <div class="text-swimwear">
+            <h2>SWIMWEAR</h2>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -199,7 +202,7 @@
               <!--Grid column-->
               <div class="col-auto">
                 <!-- Submit button -->
-                <button type="submit" class="btn btn-outline-dark px-4">
+                <button type="submit" class="sing-up btn btn-outline-dark px-4">
                   Sign up!
                 </button>
               </div>
@@ -218,6 +221,17 @@
           </p>
         </section>
         <!-- Section: Text -->
+      </div>
+      <div class="col-auto contrastMode">
+        <p class="pt-2">
+          <span>Enable high contrast mode: </span>
+        </p>
+        <!-- ? extra view -->
+        <div class="checkbox-apple">
+          <input class="yep" id="check-apple" type="checkbox" />
+          <label for="check-apple"></label>
+        </div>
+        <!-- ? extra view end -->
       </div>
       <!-- Grid container -->
     </footer>

@@ -4,6 +4,11 @@ const APIwish = "http://localhost:8000/wishlist";
 const cards = document.querySelector(".cards");
 const check = document.querySelector("#check-apple");
 
+//todo contrast
+const navbar = document.querySelector(".no-active");
+const btnMenu = document.querySelector(".btn-outline-dark");
+const footer = document.querySelector(".text-centers");
+
 //todo фильтрация по категории
 const filter = document.querySelectorAll("input[type='radio']");
 let category = "";
@@ -78,9 +83,6 @@ searchInp.addEventListener("input", () => {
   render();
 });
 
-const navbar = document.querySelector(".no-active");
-const btnMenu = document.querySelector(".btn-outline-dark");
-const footer = document.querySelector(".text-centers");
 //todo contrast
 let clicks = 0;
 check.addEventListener("click", (e) => {
