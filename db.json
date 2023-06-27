@@ -141,5 +141,12 @@
       "category": "lingerie"
     }
   ],
-  "profiles": []
+  "profiles": [
+    {
+      "username": "dana",
+      "email": "dana",
+      "password": "1234",
+      "id": 1
+    }
+  ]
 }
