@@ -2,7 +2,8 @@
 const check = document.querySelector("#check-apple");
 const navbar = document.querySelector(".no-active");
 const btnMenu = document.querySelector(".btn-outline-dark");
-const registr = document.querySelector(".registration");
+const btnSingUpUser = document.querySelector(".sing-up-user");
+const btnLogInUser = document.querySelector(".log-in-user");
 const btnSingUp = document.querySelector(".sing-up");
 const footer = document.querySelector(".text-centers");
 const textLingerie = document.querySelector(".text-lingerie");
@@ -21,8 +22,10 @@ check.addEventListener("click", (e) => {
     navbar.classList.toggle("yes-active");
     btnMenu.classList.toggle("btn-outline-light");
     btnMenu.classList.toggle("btn-outline-dark");
-    registr.classList.toggle("btn-outline-light");
-    registr.classList.toggle("btn-outline-dark");
+    btnSingUpUser.classList.toggle("btn-outline-light");
+    btnSingUpUser.classList.toggle("btn-outline-dark");
+    btnLogInUser.classList.toggle("btn-outline-light");
+    btnLogInUser.classList.toggle("btn-outline-dark");
     btnSingUp.classList.toggle("btn-outline-light");
     btnSingUp.classList.toggle("btn-outline-dark");
     footer.style.background = "black";
@@ -37,8 +40,10 @@ check.addEventListener("click", (e) => {
     navbar.classList.toggle("yes-active");
     btnMenu.classList.toggle("btn-outline-dark");
     btnMenu.classList.toggle("btn-outline-light");
-    registr.classList.toggle("btn-outline-light");
-    registr.classList.toggle("btn-outline-dark");
+    btnSingUpUser.classList.toggle("btn-outline-light");
+    btnSingUpUser.classList.toggle("btn-outline-dark");
+    btnLogInUser.classList.toggle("btn-outline-light");
+    btnLogInUser.classList.toggle("btn-outline-dark");
     btnSingUp.classList.toggle("btn-outline-light");
     btnSingUp.classList.toggle("btn-outline-dark");
     footer.style.background = "hsl(0, 28%, 87%)";
