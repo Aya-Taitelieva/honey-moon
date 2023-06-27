@@ -3,6 +3,15 @@
 const APIwish = "http://localhost:8000/wishlist";
 const cards = document.querySelector(".cards");
 const check = document.querySelector("#check-apple");
+// pagination btn
+const prev = document.querySelector(".prev");
+const next = document.querySelector(".next");
+const pageText = document.querySelector(".page");
+const pagination = document.querySelector(".pagination");
+
+const limit = 4;
+let currentPage = 1;
+let pageTotalCount = 1;
 
 //todo фильтрация по категории
 const filter = document.querySelectorAll("input[type='radio']");
@@ -14,9 +23,11 @@ let searchVal = "";
 render();
 async function getProducts() {
   const res = await fetch(
-    `${APIwish}?q=${searchVal}&category_like=${category}`
+    `${APIwish}?q=${searchVal}&category_like=${category}&_limit=${limit}&_page=${currentPage}`
   );
   const data = await res.json();
+  const count = res.headers.get("x-total-count");
+  pageTotalCount = Math.ceil(count / limit);
   return data;
 }
 
@@ -93,6 +104,8 @@ check.addEventListener("click", (e) => {
     btnMenu.classList.toggle("btn-outline-light");
     btnMenu.classList.toggle("btn-outline-dark");
     footer.style.background = "black";
+    pagination.classList.toggle("pagination");
+    pagination.classList.toggle("pagination-active");
   } else {
     document.body.style.background =
       "url(https://img.freepik.com/free-photo/gradient-peach-background-with-pink-shades_53876-105240.jpg?w=900&t=st=1687776700~exp=1687777300~hmac=1657fe5588c1a4af21882811a306af9e74e30c1a106eafab63241e7b7fe12c47)";
@@ -102,5 +115,27 @@ check.addEventListener("click", (e) => {
     btnMenu.classList.toggle("btn-outline-dark");
     btnMenu.classList.toggle("btn-outline-light");
     footer.style.background = "hsl(0, 28%, 87%)";
+    pagination.classList.toggle("pagination-active");
+    pagination.classList.toggle("pagination");
   }
+});
+
+//todo pagination
+
+prev.addEventListener("click", () => {
+  if (currentPage <= 1) {
+    return;
+  }
+  currentPage--;
+  pageText.innerText = currentPage;
+  render();
+});
+
+next.addEventListener("click", () => {
+  if (currentPage >= pageTotalCount) {
+    return;
+  }
+  currentPage++;
+  pageText.innerText = currentPage;
+  render();
 });
