@@ -108,18 +108,11 @@
       "category": "swimwear"
     },
     {
-
       "id": 3,
       "title": "Lindie Demi Cup Plunge",
       "price": 250,
       "img": "https://cdn-yotpo-images-production.yotpo.com/instagram/11/17850951401265711/standard_resolution.jpg",
       "category": "lingerie"
-
-      "id": 8,
-      "title": "Spring style swimwear - butterfly",
-      "price": 1000,
-      "img": "https://i.pinimg.com/564x/a5/83/e8/a583e83bc16fc590cd6aa1efb8da56b7.jpg",
-      "category": "swimwear"
     },
     {
       "id": 12,
@@ -141,7 +134,6 @@
       "price": 700,
       "img": "https://i.pinimg.com/564x/72/fc/dc/72fcdc45e9bc300cfb85a4f66c9620d6.jpg",
       "category": "swimwear"
-
     }
   ]
 }
