@@ -99,20 +99,6 @@
   ],
   "wishlist": [
     {
-      "id": 1,
-      "title": "Mercy Corset in Black",
-      "price": 650,
-      "img": "https://cdn-yotpo-images-production.yotpo.com/instagram/78/17949564403413378/standard_resolution.jpg",
-      "category": "lingerie"
-    },
-    {
-      "id": 2,
-      "title": "Mercy Corset in Blush",
-      "price": 750,
-      "img": "https://cdn-yotpo-images-production.yotpo.com/instagram/56/18127852465171156/standard_resolution.jpg",
-      "category": "lingerie"
-    },
-    {
       "id": 7,
       "title": "Dakotta swimwear in Black",
       "price": 1200,
@@ -124,6 +110,7 @@
       "title": "Lindie Demi Cup Plunge",
       "price": 250,
       "img": "https://cdn-yotpo-images-production.yotpo.com/instagram/11/17850951401265711/standard_resolution.jpg"
+      "category": "lingerie"
     },
     {
       "id": 12,

@@ -13,6 +13,11 @@ const limit = 4;
 let currentPage = 1;
 let pageTotalCount = 1;
 
+//todo contrast
+const navbar = document.querySelector(".no-active");
+const btnMenu = document.querySelector(".btn-outline-dark");
+const footer = document.querySelector(".text-centers");
+
 //todo фильтрация по категории
 const filter = document.querySelectorAll("input[type='radio']");
 let category = "";
@@ -89,9 +94,6 @@ searchInp.addEventListener("input", () => {
   render();
 });
 
-const navbar = document.querySelector(".no-active");
-const btnMenu = document.querySelector(".btn-outline-dark");
-const footer = document.querySelector(".text-centers");
 //todo contrast
 let clicks = 0;
 check.addEventListener("click", (e) => {
@@ -139,3 +141,36 @@ next.addEventListener("click", () => {
   pageText.innerText = currentPage;
   render();
 });
+
+const totalPrice = document.querySelector(".price-container");
+const ul = document.querySelector(".lists");
+const li = document.querySelector(".list");
+
+async function priceRender() {
+  const data = await getProducts();
+  let sum = 0;
+  data.forEach((item) => {
+    sum += item.price;
+    totalPrice.innerText = `${sum}$`;
+    ul.innerHTML += `
+     <li class="list">
+                        <span>
+                          <svg
+                            aria-hidden="true"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M4.5 12.75l6 6 9-13.5"
+                              stroke-linejoin="round"
+                              stroke-linecap="round"></path>
+                          </svg>
+                        </span>
+                        <p>${item.title}</p>
+                      </li>
+    `;
+  });
+}
+priceRender();
