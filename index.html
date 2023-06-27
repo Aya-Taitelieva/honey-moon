@@ -30,14 +30,66 @@
           Menu
         </button>
         <a class="navbar-brand"></a>
+        <div class="navbar-left-side d-flex">
+          <form class="d-flex" role="search">
+            <input
+              class="form-control w-100"
+              type="search"
+              placeholder="Search"
+              aria-label="Search" />
+          </form>
+          <!-- Button trigger modal -->
+          <button
+            type="button"
+            class="btn btn-outline-dark px-1 mx-1"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal">
+            Registration
+          </button>
+        </div>
 
-        <form class="d-flex" role="search">
-          <input
-            class="form-control me-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search" />
-        </form>
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">
+                  Enter your details to place an order:
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <section class="section_form">
+                  <form id="consultation-form" class="feed-form" action="#">
+                    <input required="" placeholder="Name" type="text" />
+                    <input
+                      name="phone"
+                      required=""
+                      placeholder="Phone number" />
+                    <input
+                      name="email"
+                      required=""
+                      placeholder="E-mail"
+                      type="email" />
+                    <button class="button_submit btn-outline-dark px-4">
+                      ORDER
+                    </button>
+                  </form>
+                </section>
+              </div>
+              <div class="modal-footer"></div>
+            </div>
+          </div>
+        </div>
       </div>
     </nav>
 
